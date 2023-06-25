@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/jam.css">
+    <link rel="stylesheet" href="../css/us.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body onload="initClock()">
+    <header>
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <nav>
+            <div class="logo">
+                <strong> TODAY's </strong>
+            </div>
+            <button type="button" class="btn-hamburger" data-action="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a> </li>
+                <li class="nav-item"><a href="about.html">About</a> </li>
+                <li class="nav-item"><a href="contact_us.html">Contact</a> </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-action="dropdown-toggle">Category</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cuaca.html">Cuaca</a>
+                        <a class="dropdown-item" href="gempa.html">Gempa</a>
+                        <a class="dropdown-item" href="https://dibi.bnpb.go.id/">BNPB</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="contact">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <p>Silahkan untuk mengisi data yang diperlukan sebelum memeberikan kritik ataupun saran pada website kami. Untuk info lebih lanjut silhakan hubungi nomor yang tertera atau email pada pada alamat yang tertera.</p>
+                </div>
+                <div class="container">
+                    <div class="contactInfo">
+                        <div class="box">
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>Jl. Dakota No.8a Sukaraja, Cicendo - Kota Bandung 40175</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h3>Phone</h3>
+                                <p>+6283130668561</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>kriserhl@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactForm">
+                        <form>
+                            <h2>Send Message</h2>
+                            <div class="inputBox">
+                                <input type="text" name="" required="required">
+                                <span>Full Name</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="email" name="" required="required">
+                                <span>Email</span>
+                            </div>
+                            <div class="inputBox">
+                                <textarea required="required"></textarea>
+                                <span>Type  your message</span>
+                            </div>
+                            <div class="inputBox">
+                                <button><input type="submit" name="" value="Send" onclick="alert('pesan anda telah disampaikan')"> <a href="home.html"></a></button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <small>Copyright &copy; 2022 - Krise Rohalia</small>
+            </div>
+        </footer>
+        <script src="../java script/jam.js"></script>
+        <script src="../java script/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.datetime {
+    color: #fff;
+    background: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    padding-left: 1px;
+}
+
+.datetime:hover {
+    background: #2e94e3;
+}
+
+.date {
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(196, 203, 203);
+    color: white;
+    background: linear-gradient(to left, rgb(10, 41, 103), rgb(107, 137, 208));
+}

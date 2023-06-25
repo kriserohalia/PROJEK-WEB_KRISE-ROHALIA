@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gempa</title>
+    <link rel="stylesheet" href="../css/jam.css">
+    <!-- <link rel="stylesheet" href="../css/main.css"> -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/gempa.css">
+</head>
+
+<body onload="initClock()">
+    <header>
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <nav>
+            <div class="logo">
+                <strong> TODAY's </strong>
+            </div>
+            <button type="button" class="btn-hamburger" data-action="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a> </li>
+                <li class="nav-item"><a href="about.html">About</a> </li>
+                <li class="nav-item"><a href="contact_us.html">Contact</a> </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-action="dropdown-toggle">Category</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cuaca.html">Cuaca</a>
+                        <a class="dropdown-item" href="gempa.html">Gempa</a>
+                        <a class="dropdown-item" href="https://dibi.bnpb.go.id/">BNPB</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <section class="menu">
+            <button type="submit" onclick="tampil()" id="gempa">Lihat Detail Gempa Terbaru</button>
+            <div id="box"></div>
+        </section>
+        <main>
+            <div class="text">
+                <h2> Berikut beberapa info menarik yang dapat kamu ketahui tentang gempa bumi</h2>
+            </div>
+            <div class="slide-container">
+                <div class="slide-content">
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../assets/img7.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"><b>Gempa Bumi</b></h2>
+                            <p class="description"><b>Gempa Bumi</b> adalah getaran atau getar-getar yang terjadi dipermukaan <b>bumi</b> akibat pelepasan. Gempa bumi diukur dengan menggunakan alat
+                                <b>Seismometer</b>. <b>Skala Ritcher</b> adalah skala yang dilaporkan oleh obsevatorium seismologi nasional yang diukur pada skala besarnya lokal 5 magnitude. Intensitas getaran diukur pada modifikasi <b>Skala Mercalli</b>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-content">
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../assets/tsunami.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"><b>Syarat Gempa yang Berpotensi Tsunami</b></h2>
+                            <p class="description"> Gempa bisa berpotensi menjadi tsunami jika pusat gempa berada di dasar laut dengan skala yang besar dan kedalaman yang rendah (lebih dari 7 SR dan kurang dari 70 km). </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-content">
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../assets/gempa.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"><b>Intensitas Gempa Di Dunia</b></h2>
+                            <p class="description">Pusat Informasi Gempa Nasional (NEIC) mencatat rata-rata 20.000 gempa bumi setipa tahun (sekitar 50 hari) di seluruh dunia. Namun, ada jutaaan gempa yang diperkirakan terjadi setiap tahun yang terlalu lemah untuk dicatat. Gempa
+                                yang berskala 3 tidak akan dapat manusia rasakan, sementara gempa berskala 6 sudah cukup menimbulkan kerusakan. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-content">
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../assets/california.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"><b>10.000 Gempa di California Selatan</b></h2>
+                            <p class="description">Setiap tahun wilayah California Selatan memiliki sekitar 10.000 gempa bumi, yang sebagian besar tidak diketahui. Namun, jika ada gempa besar, gempa susulan akan terjadi lebih banyak dengan bermacam besaran selama berbulan-bulan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-content">
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../assets/CINCIN-API.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"><b>80% Gempa Terjadi di Tepi Samudra Pasifik</b></h2>
+                            <p class="description">Hampir 80% dari semua gempa bumi terjadi di sepanjang tepi Samudra Pasifik, yang disebut <b>"Cincin Api"</b>, sebuah wilayah yang mengelilingi Samudra Pasifik dan merupakan rumah bagi 452 guunug berapi (lebih dari 75% gunung
+                                berapi aktif).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide-content">
+                    <div class="card">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../assets/chile.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"><b>Gempa Bumi dengan kekuatan Terbesar</b></h2>
+                            <p class="description">Sementara gempa terbesar di dunia yang pernah tercatat adalah sebesar 9,5 skala richter di Chile pada 22 Mei 1960. Ketika gempa Chile terjadi, seismograf mencatat gelombang seismik yang melintas di seluruh dunia. Gelombang
+                                seismik ini mengguncang seluruh bumi selama beberapa hari.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <small>Copyright &copy; 2022 - Krise Rohalia</small>
+        </div>
+    </footer>
+    <script src="../java script/jam.js"></script>
+    <script src="../java script/nav.js"></script>
+    <script src="../java script/gempa.js"></script>
+</body>
+
+</html>

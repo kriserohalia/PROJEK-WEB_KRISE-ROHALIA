@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-image: url(../assets/sky.jpg);
+    background-repeat: round;
+    padding-bottom: 70px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+section #box {
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: cadetblue;
+    width: 100%;
+    margin: 20px;
+    color: black;
+    padding: 10px;
+}
+
+.search button {
+    width: 80px;
+    margin-top: 40px;
+    background-color: #2f3542;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.search input[type='text'] {
+    width: 250px;
+    margin-top: 40px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.search input[type='text']:focus {
+    border: 2px solid black;
+}
+
+.hasil {
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.warna {
+    background-color: dimgray;
+    line-height: 2;
+    margin: 20x;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.slide-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 20px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-container .text h2 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.slide-content {
+    display: flex;
+}
+
+.card {
+    margin: 10px;
+    width: 350px;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 25px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.name {
+    text-align: center;
+}
+
+.description {
+    padding: 10px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-position: center;
+    opacity: 0.6;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.card-image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .body {
+        width: 100%;
+    }
+    .slide-container {
+        padding: 30px;
+    }
+    .slide-content {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%;
+    }
+    .warna {
+        width: 100%;
+    }
+}

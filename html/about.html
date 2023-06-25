@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="../css/jam.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/about.css">
+</head>
+
+<body onload="initClock()">
+    <header>
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>
+                <span id="year">Year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+    </header>
+    <div id="wrap">
+        <nav>
+            <div class="logo">
+                <strong> TODAY's </strong>
+            </div>
+            <button type="button" class="btn-hamburger" data-action="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">Home</a> </li>
+                <li class="nav-item"><a href="about.html">About</a> </li>
+                <li class="nav-item"><a href="contact_us.html">Contact</a> </li>
+                <li class="nav-item dropdown">
+                    <a href="#" data-action="dropdown-toggle">Category</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cuaca.html">Cuaca</a>
+                        <a class="dropdown-item" href="gempa.html">Gempa</a>
+                        <a class="dropdown-item" href="https://dibi.bnpb.go.id/">BNPB</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="outer-container">
+            <div class="video-container">
+                <video src="../assets/animation5.mov" autoplay loop muted>   
+            </video>
+            </div>
+            <div class="overplay"></div>
+            <div class="text">
+                <h1>Tentang Today's Web</h1>
+                <hr>
+                <p>Today's Web merupakan website yang berguna untuk menampilkan informasi mengenai prakiraan cuaca dan info gempa bumi terbaru.</p>
+                <p>Website ini dibangun untuk memenuhi tugas akhir pelatihan WEB I Program Beasiswa PUB Angkatan 20</p>
+                <p>Dengan adanya web ini diharapkan dapat digunakan oleh pengguna yang akan beraktivitas diluar agar bisa lebih siap sebelum melalui hari-harinya.</p>
+                <p>Semua informasi yang ada didalam website ini menggunakan sumber dari openweather.com dengan akurasi data sekitar 80-85%</p>
+
+
+                <h1>Profile</h1>
+                <hr>
+                <div class="lol">
+                    <span class="profile"><img src="../assets/me.jpg" alt=""></span>
+                    <div class="lil">
+                        <p>Nama : Krise Rohalia</p>
+                        <p>Tempat, tanggal lahir : Ciamis, 17 Oktober 2002</p>
+                        <p>NIM : 02042111018</p>
+                        <p>Prodi : D3 Manajemen Informatika (Semester 2)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div>
+            <small>Copyright &copy; 2022 - Krise Rohalia</small>
+        </div>
+    </footer>
+
+    <script src="../java script/jam.js"></script>
+    <script src="../java script/nav.js"></script>
+
+
+</body>
+
+</html>
